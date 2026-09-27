@@ -25,7 +25,7 @@
     <main id="top">
       <div class="intro"><div><p class="overline">Rhythm game &amp; chart editor</p><h1>864 <em>beat</em></h1><p>プレイする人へ。譜面をつくる人へ。<br>ゲーム本体とエディタを、それぞれダウンロードできます。</p></div><img class="intro-mark" src="./864beat-icon.jpg" alt="864 beat のアイコン"></div>
       <section id="download" aria-labelledby="download-title"><div class="section-head"><small>01 / FILES</small><h2 id="download-title">ダウンロード</h2></div><div class="download-item"><div class="index">01</div><div><h3>864 beat</h3><p>ゲーム本体 / Windows</p><p class="version" data-asset="864beat-Game.zip" data-version="0.5.2" aria-live="polite">ゲーム v0.5.2 ・ ZIP更新日を確認中</p></div><a class="download-link" href="https://github.com/ampere112coulomb/864beat/releases/latest/download/864beat-Game.zip">ゲームをダウンロード <span aria-hidden="true">↗</span></a></div><div class="download-item"><div class="index">02</div><div><h3>864 beat Editor</h3><p>譜面エディタ / Windows</p><p class="version" data-asset="864beat-Editor.zip" data-version="0.6.3" aria-live="polite">エディタ v0.6.3 ・ ZIP更新日を確認中</p></div><a class="download-link" href="https://github.com/ampere112coulomb/864beat/releases/latest/download/864beat-Editor.zip">エディタをダウンロード <span aria-hidden="true">↗</span></a></div><p class="release-note">ZIPを展開してから起動してください。譜面・音源は別途用意してください。</p></section>
-      <section class="songs" id="songs" aria-labelledby="songs-title"><div class="section-head"><small>02 / SONG SETUP</small><h2 id="songs-title">曲の入れ方</h2></div><div class="songs-content"><div><h3>EXEの横に song フォルダ</h3><p>ゲーム本体のZIPを展開したら、<strong>864 beat.exe と同じ場所</strong>に <strong>song</strong> フォルダを作ります。その中に曲ごとのフォルダを置き、譜面ファイルと素材をまとめてください。</p><pre class="folder-tree" aria-label="song フォルダの構成例">864beat/
+      <section class="songs" id="songs" aria-labelledby="songs-title"><div class="section-head"><small>02 / SONG SETUP</small><h2 id="songs-title">曲の入れ方</h2></div><div class="songs-content"><div><h3>EXEの横に song フォルダ</h3><p>ゲーム本体のZIPを展開したら、<strong>864 beat.exe と同じ場所</strong>に <strong>song</strong> フォルダを作ります。その中に曲ごとのフォルダを置き、譜面ファイルと素材をまとめてください。</p><p>現在の選曲画面では、曲は<strong>song 内の曲フォルダ名順</strong>に並びます。フォルダをさらに入れ子にした場合は、song からの相対パス順です。並び順を変えたいときは曲フォルダ名の先頭に番号を付けてください。</p><pre class="folder-tree" aria-label="song フォルダの構成例">864beat/
 ├─ 864 beat.exe
 └─ song/
    ├─ 曲A/
@@ -52,12 +52,12 @@
         </div></details>
         <details><summary><span class="number">03</span>曲情報・難易度・レーン数</summary><div class="manual-content">
           <p>曲名、作曲者、譜面デザイナー、難易度、レベル、レーン数、初期BPM・拍子、音源、背景画像、正方形のジャケット、背景動画、音源オフセット、プレビュー範囲を設定できます。</p>
-          <p>難易度は <strong>Easy / Normal / Hard / Expert / Master / SPECIAL</strong>、レベルは <strong>1～50</strong>。レーン数は <strong>3 / 4 / 5 / 6 / 8 / 12</strong> に対応します。難易度ごとにレベル、レーン数、ノーツ、演出などを持てます。古い譜面の <code>Custom</code> は SPECIAL として読み込めます。</p>
+          <p>難易度は <strong>Easy / Normal / Hard / Expert / Master / SPECIAL</strong>、レベルは <strong>0～30（最高30）</strong>。レーン数は <strong>3 / 4 / 5 / 6 / 8 / 12</strong> に対応します。難易度ごとにレベル、レーン数、ノーツ、演出などを持てます。古い譜面の <code>Custom</code> は SPECIAL として読み込めます。</p>
           <p>画像・動画・音源のファイル名は、保存した譜面と同じ曲フォルダ内の実ファイル名に合わせてください。ジャケットは正方形の画像を使用します。</p>
         </div></details>
         <details><summary><span class="number">04</span>タイムライン・SNAP・拡大縮小</summary><div class="manual-content">
           <p>中央の譜面を<strong>マウスホイール</strong>で拍方向にスクロールし、<strong>右ドラッグ</strong>で移動します。譜面上で <strong>Ctrl＋ホイール</strong>を使うと、拍の表示倍率を変えられます。ブラウザ画面全体の拡大縮小は無効です。</p>
-          <p><strong>SNAP</strong> はノーツやイベントを置く拍の刻み幅です。1、2、3、4、5、6、8、12、16、24、32分割から選ぶか、その他で1～192を指定します。細かくしたいときは分割数を増やしてください。</p>
+          <p><strong>SNAP</strong> はノーツやイベントを置く拍の刻み幅です。1、2、3、4、5、6、8、12、16、24、32分割から選ぶか、「その他」に1以上の整数を入力します。「その他」に固定の上限はありませんが、大きすぎる値は操作しづらくなる場合があります。</p>
           <p>判定線の拍が、コピー貼り付けやテストプレイ開始位置の基準になります。</p>
         </div></details>
         <details><summary><span class="number">05</span>ノーツの配置と種類</summary><div class="manual-content">
