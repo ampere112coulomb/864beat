@@ -65,17 +65,17 @@
           <ul><li><strong>Normal：</strong>通常ノーツ。</li><li><strong>Hold / Long：</strong>長押し系のノーツ。始点・終点や継続部分を確認してください。</li><li><strong>Damage：</strong>ダメージノーツ。</li><li><strong>Guide：</strong>判定のない演出用ライン。通常ノーツの背面に表示されます。</li></ul>
           <p>配置後は音源を再生してタイミングを確認し、最後に実際のゲーム画面でテストしてください。</p>
         </div></details>
-        <details><summary><span class="number">06</span>範囲選択・コピー・SS</summary><div class="manual-content">
+        <details><summary><span class="number">06</span>範囲選択・コピー</summary><div class="manual-content">
           <p><strong>Shift＋左ドラッグ</strong>で範囲を囲むと、複数ノーツや演出イベントを選べます。<strong>Ctrl＋C</strong> でコピー、移動先の拍に判定線を合わせて <strong>Ctrl＋V</strong> でまとめて貼り付けます。選択パネルから一括削除・設定変更もできます。</p>
-          <p><strong>SS（ソロスピード）</strong>は選択したノーツ<strong>個々</strong>にかける速度倍率です。右側の選択メニューで倍率を入力して適用・解除します。範囲は <strong>0.01～1000</strong>。設定済みノーツにはエディタ上で細い緑の縁とSS値が表示されます。</p>
+          <p>選択したノーツにはSSもまとめて適用できます。速度倍率の意味と設定方法は下の「BPM・BS・NS・SS・拍子」を参照してください。</p>
         </div></details>
         <details><summary><span class="number">07</span>ガイド・フィーバー演出</summary><div class="manual-content">
           <p><strong>Guide</strong> は色、透明度、表示方法（通常・フェード・ライズなど）を調整できます。よく使う色はパレットに保存・呼び出しが可能です。選択したガイドの色や透明度もまとめて変更できます。</p>
           <p><strong>Fever</strong> は <strong>Tabを押しながら範囲を指定</strong>して配置します。SNAPに沿って始点・終点を決め、ゲーム側の発光演出を確認してください。</p>
         </div></details>
-        <details><summary><span class="number">08</span>BPM・BS・NS・拍子の変更</summary><div class="manual-content">
-          <p>演出レーンの空白をクリックしてイベントを追加します。既存イベントの選択・編集は右側の一覧からも行えます。複数選択、コピー貼り付け、削除に対応します。</p>
-          <ul><li><strong>BPM：</strong>曲の拍の速さを変更します。音源との同期に関わります。</li><li><strong>BS：</strong>レーン全体のスクロール倍率です。0で停止、負数で逆方向になります。</li><li><strong>NS：</strong>ノーツの見た目の速度倍率です。ノーツ間隔の圧縮・拡大にも反映されます。1～3の変化モードと、変化にかける拍数を指定できます。</li><li><strong>SIG：</strong>拍子を変更します。</li></ul>
+        <details><summary><span class="number">08</span>BPM・BS・NS・SS・拍子の変更</summary><div class="manual-content">
+          <p>BPM・BS・NS・SIGは演出レーンの空白をクリックしてイベントを追加します。既存イベントの選択・編集は右側の一覧からも行えます。複数選択、コピー貼り付け、削除に対応します。</p>
+          <ul><li><strong>BPM：</strong>曲の拍の速さを変更します。音源との同期に関わります。</li><li><strong>BS：</strong>レーン全体のスクロール倍率です。0で停止、負数で逆方向になります。</li><li><strong>NS：</strong>ノーツの見た目の速度倍率です。ノーツ間隔の圧縮・拡大にも反映されます。1～3の変化モードと、変化にかける拍数を指定できます。</li><li><strong>SS（ソロスピード）：</strong>選んだノーツ個々にかける速度倍率です。Shift＋左ドラッグでノーツを選択し、右側の選択メニューで倍率を入力して適用・解除します。範囲は0.01～1000。設定済みノーツにはエディタ上で細い緑の縁とSS値が表示されます。SSは演出レーンのイベントではありません。</li><li><strong>SIG：</strong>拍子を変更します。</li></ul>
           <p><strong>SS</strong>は選んだノーツだけ、<strong>NS</strong>は以降のノーツの見た目、<strong>BS</strong>はレーン全体の流れを制御する設定です。</p>
         </div></details>
         <details><summary><span class="number">09</span>カメラ演出</summary><div class="manual-content">
