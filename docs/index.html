@@ -13,9 +13,10 @@
     .intro{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:36px;align-items:end;padding:86px 0 72px}.overline{font-size:.78rem;letter-spacing:.23em;text-transform:uppercase;color:var(--blue);font-weight:800;margin:0 0 16px}.intro h1{font-size:clamp(4.4rem,10vw,9.7rem);font-weight:900;letter-spacing:-.085em;line-height:.85;margin:0 0 31px;white-space:nowrap}.intro h1 em{font-style:normal;color:var(--purple)}.intro p:last-child{font-size:1.1rem;margin:0;color:var(--sub)}.intro-mark{width:100%;max-width:190px;aspect-ratio:1;object-fit:cover;justify-self:end}
     .section-head{display:flex;align-items:baseline;gap:28px;border-bottom:1px solid var(--text);padding-bottom:12px}.section-head h2{font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.2;margin:0;letter-spacing:-.03em}.section-head small{font-size:.78rem;letter-spacing:.18em;color:var(--blue);font-weight:700}.download-item{display:grid;grid-template-columns:95px minmax(0,1fr) auto;align-items:center;gap:26px;min-height:154px;border-bottom:1px solid var(--line)}.download-item .index{font-size:1.05rem;color:var(--purple);font-weight:800}.download-item h3{font-size:1.8rem;line-height:1.25;letter-spacing:-.035em;margin:0 0 6px}.download-item p{color:var(--sub);margin:0;font-size:.94rem}.download-item .version{color:var(--blue);font-size:.78rem;letter-spacing:.04em;margin-top:7px}.download-link{display:inline-flex;align-items:center;gap:22px;padding:15px 0;border-bottom:2px solid var(--blue);font-weight:800;text-decoration:none;white-space:nowrap;transition:gap .2s,color .2s}.download-link:hover{gap:30px;color:var(--blue)}.download-link span{font-size:1.4rem;line-height:1}.release-note{color:var(--sub);font-size:.87rem;margin:20px 0 0}
     .songs{padding:120px 0 0}.songs-content{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(270px,.9fr);gap:10%;padding-top:40px}.songs h3{font-size:1.12rem;margin:0 0 16px;color:var(--blue)}.songs p{margin:0 0 18px;color:var(--sub)}.songs strong{color:var(--text)}.folder-tree{border-left:2px solid var(--blue);padding:4px 0 4px 20px;margin:22px 0 18px;white-space:pre;overflow-x:auto;color:var(--text);font: .91rem/1.7 Consolas,"Yu Gothic",monospace}.songs .fine{font-size:.85rem}.song-details{margin:0;padding:0;list-style:none}.song-details li{display:grid;grid-template-columns:128px minmax(0,1fr);gap:8px;border-bottom:1px solid var(--line);padding:12px 0;color:var(--sub)}.song-details b{color:var(--text)}.guide{padding:130px 0 105px}.guide-content{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(270px,.9fr);gap:10%;padding-top:43px}.guide h3{font-size:1.12rem;margin:0 0 22px;color:var(--blue)}.steps{list-style:none;padding:0;margin:0}.steps li{display:grid;grid-template-columns:46px 1fr;gap:8px;padding:18px 0;border-bottom:1px solid var(--line)}.steps li:first-child{padding-top:0}.steps b{font-size:.85rem;color:var(--purple)}.guide aside p{margin:0 0 28px;color:var(--sub)}.guide aside strong{display:block;color:var(--text);font-size:1rem;margin-bottom:3px}footer{display:flex;justify-content:space-between;gap:16px;padding:30px 0 48px;border-top:1px solid var(--line);color:var(--sub);font-size:.86rem}footer a{text-decoration:none}
+    .manual{padding:0 0 125px}.manual-intro{color:var(--sub);max-width:760px;margin:27px 0 33px}.manual details{border-bottom:1px solid var(--line)}.manual details:first-of-type{border-top:1px solid var(--line)}.manual summary{display:flex;align-items:center;gap:20px;cursor:pointer;list-style:none;padding:22px 0;font-size:1.08rem;font-weight:700}.manual summary::-webkit-details-marker{display:none}.manual summary::after{content:"＋";margin-left:auto;color:var(--blue);font-size:1.35rem;font-weight:400}.manual details[open] summary::after{content:"－"}.manual summary:focus-visible{outline:2px solid var(--blue);outline-offset:3px}.manual .number{color:var(--purple);font-size:.78rem;min-width:30px}.manual-content{max-width:910px;padding:0 0 24px 50px;color:var(--sub);font-size:.95rem}.manual-content p{margin:0 0 13px}.manual-content ul{margin:8px 0 15px;padding-left:1.4em}.manual-content li{margin:5px 0}.manual-content strong{color:var(--text)}.manual-content code{font:inherit;color:var(--blue)}.manual-content h3{font-size:1rem;color:var(--blue);margin:25px 0 7px}.manual-content h3:first-child{margin-top:0}.manual-content .note{font-size:.86rem;color:var(--sub)}
     @media(max-width:850px){.page{padding:0 30px}.intro{grid-template-columns:1fr 115px;padding:64px 0 60px}.intro h1{font-size:clamp(3.7rem,11vw,7rem)}.download-item{grid-template-columns:50px 1fr;gap:12px;padding:26px 0}.download-link{grid-column:2;justify-self:start;padding-top:3px}.guide-content{gap:6%}}
     @media(max-width:850px){.songs-content{grid-template-columns:1fr;gap:35px}}
-    @media(max-width:600px){.page{padding:0 20px}header{min-height:74px}.identity img{width:34px;height:34px}.identity{font-size:.93rem;gap:9px}nav{gap:14px;font-size:.76rem}.intro{display:block;padding:60px 0 52px}.intro h1{font-size:clamp(3.4rem,14vw,5.7rem);white-space:normal}.intro p:last-child{font-size:1rem}.intro-mark{display:none}.section-head{gap:14px}.download-item{grid-template-columns:35px 1fr}.download-item h3{font-size:1.35rem}.download-link{white-space:normal;font-size:.94rem}.songs{padding-top:85px}.folder-tree{font-size:.78rem;padding-left:12px}.guide{padding:95px 0 75px}.guide-content{grid-template-columns:1fr;gap:50px}.steps li{grid-template-columns:35px 1fr}footer{display:block}footer a{display:block;margin-top:8px}}
+    @media(max-width:600px){.page{padding:0 20px}header{min-height:74px}.identity img{width:34px;height:34px}.identity{font-size:.93rem;gap:9px}nav{gap:14px;font-size:.76rem}.intro{display:block;padding:60px 0 52px}.intro h1{font-size:clamp(3.4rem,14vw,5.7rem);white-space:normal}.intro p:last-child{font-size:1rem}.intro-mark{display:none}.section-head{gap:14px}.download-item{grid-template-columns:35px 1fr}.download-item h3{font-size:1.35rem}.download-link{white-space:normal;font-size:.94rem}.songs{padding-top:85px}.folder-tree{font-size:.78rem;padding-left:12px}.guide{padding:95px 0 75px}.guide-content{grid-template-columns:1fr;gap:50px}.steps li{grid-template-columns:35px 1fr}.manual{padding-bottom:85px}.manual summary{gap:10px;font-size:1rem}.manual .number{min-width:24px}.manual-content{padding-left:34px}footer{display:block}footer a{display:block;margin-top:8px}}
   </style>
 </head>
 <body>
@@ -37,6 +38,80 @@
       ├─ chart.2d
       └─ music.mp3</pre><p class="fine">曲ごとのZIPを入手した場合は、ZIP自体を置かずに展開し、<strong>曲フォルダを song の中へ</strong>移動してください。曲を追加した後は、選曲画面で <strong>F5</strong> を押すと再読み込みできます。</p></div><div><h3>ファイル名の対応</h3><p>譜面の <strong>.2d</strong> に書かれた名前と、実際のファイル名を一致させます。次は上の「曲A」の例です。</p><ul class="song-details"><li><b>SONG:</b>music.ogg ― 楽曲音源</li><li><b>JACKET:</b>jacket.png ― ジャケット</li><li><b>BACKGROUND:</b>background.png ― 背景画像</li><li><b>MOVIE:</b>movie.mp4 ― 背景動画</li></ul><p class="fine">ゲームは song 以下の <strong>.2d</strong> を自動検出します。通常は1曲につき1つの曲フォルダと <strong>chart.2d</strong> を用意します。カテゴリ別のフォルダを曲フォルダの上に追加しても読み込めます。背景画像・動画を使わない曲は、それらのファイルと指定を省略できます。</p></div></div></section>
       <section class="guide" id="editor" aria-labelledby="editor-title"><div class="section-head"><small>03 / HOW TO USE</small><h2 id="editor-title">譜面をつくる</h2></div><div class="guide-content"><div><h3>基本の流れ</h3><ol class="steps"><li><b>01</b><span>エディタを起動し、新規譜面を作成します。</span></li><li><b>02</b><span>曲名、作曲者、難易度、音源、ジャケットを設定します。</span></li><li><b>03</b><span>タイムラインにノーツを置き、BPMや演出を調整します。</span></li><li><b>04</b><span>テストプレイで確認してから、譜面を保存します。</span></li></ol></div><aside><h3>制作前に</h3><p><strong>ジャケット</strong>正方形の画像を用意してください。</p><p><strong>音源と画像</strong>譜面を配布するときは、使用素材の利用許諾を確認してください。</p><p><strong>演出</strong>レーン数やキー配置のほか、BPM、カメラなども設定できます。</p></aside></div></section>
+      <section class="manual" id="manual" aria-labelledby="manual-title">
+        <div class="section-head"><small>04 / EDITOR MANUAL</small><h2 id="manual-title">エディタの使い方・全機能</h2></div>
+        <p class="manual-intro">知りたい項目を開いて確認できます。譜面の作成からテストプレイ、MP4書き出しまで、エディタ v0.6.3 の操作をまとめました。</p>
+        <details><summary><span class="number">01</span>起動・必要なファイル・曲フォルダ</summary><div class="manual-content">
+          <p>Windows用のエディタZIPを<strong>展開してから</strong> <code>864 beat Editor.exe</code> を起動します。EXE・<code>editor.html</code>・同梱ファイル・<code>skin</code> フォルダは、元の配置のまま使ってください。画面が表示されない場合は Microsoft WebView2 Runtime を確認してください。</p>
+          <p>譜面は <code>.2d</code> 形式です。楽曲ごとにフォルダを作り、<code>.2d</code>、音源、ジャケット、背景画像・動画を同じフォルダに置くと管理しやすくなります。上の「曲の入れ方」に構成例があります。</p>
+          <p>既存の譜面を読み込むと、<code>SONG</code> に指定された同じフォルダ内の音源を探します。<code>SONG</code> がなく、音源が1つだけの場合は自動選択されます。必要ならエディタの音源選択欄で指定し直せます。</p>
+        </div></details>
+        <details><summary><span class="number">02</span>画面の見方</summary><div class="manual-content">
+          <ul><li><strong>左側：</strong>曲情報、音源、ノーツ種類、ファイルの読み込み・保存。</li><li><strong>中央：</strong>譜面のノーツレーン、演出レーン、判定線、拍のタイムライン。</li><li><strong>右側：</strong>プレビュー、選択中のノーツ・イベント、イベント一覧。</li><li><strong>下部：</strong>再生、現在拍、Undo、ノーツ数、テストプレイ、動画書き出し。</li></ul>
+          <p>表示中の「ノーツ数」はゲームの<strong>オート再生で増える判定数</strong>に合わせています。ロングの始点・終点はそれぞれ数え、判定のないガイドは数えません。</p>
+        </div></details>
+        <details><summary><span class="number">03</span>曲情報・難易度・レーン数</summary><div class="manual-content">
+          <p>曲名、作曲者、譜面デザイナー、難易度、レベル、レーン数、初期BPM・拍子、音源、背景画像、正方形のジャケット、背景動画、音源オフセット、プレビュー範囲を設定できます。</p>
+          <p>難易度は <strong>Easy / Normal / Hard / Expert / Master / SPECIAL</strong>、レベルは <strong>1～50</strong>。レーン数は <strong>3 / 4 / 5 / 6 / 8 / 12</strong> に対応します。難易度ごとにレベル、レーン数、ノーツ、演出などを持てます。古い譜面の <code>Custom</code> は SPECIAL として読み込めます。</p>
+          <p>画像・動画・音源のファイル名は、保存した譜面と同じ曲フォルダ内の実ファイル名に合わせてください。ジャケットは正方形の画像を使用します。</p>
+        </div></details>
+        <details><summary><span class="number">04</span>タイムライン・SNAP・拡大縮小</summary><div class="manual-content">
+          <p>中央の譜面を<strong>マウスホイール</strong>で拍方向にスクロールし、<strong>右ドラッグ</strong>で移動します。譜面上で <strong>Ctrl＋ホイール</strong>を使うと、拍の表示倍率を変えられます。ブラウザ画面全体の拡大縮小は無効です。</p>
+          <p><strong>SNAP</strong> はノーツやイベントを置く拍の刻み幅です。1、2、3、4、5、6、8、12、16、24、32分割から選ぶか、その他で1～192を指定します。細かくしたいときは分割数を増やしてください。</p>
+          <p>判定線の拍が、コピー貼り付けやテストプレイ開始位置の基準になります。</p>
+        </div></details>
+        <details><summary><span class="number">05</span>ノーツの配置と種類</summary><div class="manual-content">
+          <p>左側で種類を選び、ノーツレーンを<strong>左クリック</strong>して配置します。配置済みのノーツは操作に応じて選択・削除できます。ロングとガイドは始点と終点を2回クリックして作ります。</p>
+          <ul><li><strong>Normal：</strong>通常ノーツ。</li><li><strong>Hold / Long：</strong>長押し系のノーツ。始点・終点や継続部分を確認してください。</li><li><strong>Damage：</strong>ダメージノーツ。</li><li><strong>Guide：</strong>判定のない演出用ライン。通常ノーツの背面に表示されます。</li></ul>
+          <p>配置後は音源を再生してタイミングを確認し、最後に実際のゲーム画面でテストしてください。</p>
+        </div></details>
+        <details><summary><span class="number">06</span>範囲選択・コピー・SS</summary><div class="manual-content">
+          <p><strong>Shift＋左ドラッグ</strong>で範囲を囲むと、複数ノーツや演出イベントを選べます。<strong>Ctrl＋C</strong> でコピー、移動先の拍に判定線を合わせて <strong>Ctrl＋V</strong> でまとめて貼り付けます。選択パネルから一括削除・設定変更もできます。</p>
+          <p><strong>SS（ソロスピード）</strong>は選択したノーツ<strong>個々</strong>にかける速度倍率です。右側の選択メニューで倍率を入力して適用・解除します。範囲は <strong>0.01～1000</strong>。設定済みノーツにはエディタ上で細い緑の縁とSS値が表示されます。</p>
+        </div></details>
+        <details><summary><span class="number">07</span>ガイド・フィーバー演出</summary><div class="manual-content">
+          <p><strong>Guide</strong> は色、透明度、表示方法（通常・フェード・ライズなど）を調整できます。よく使う色はパレットに保存・呼び出しが可能です。選択したガイドの色や透明度もまとめて変更できます。</p>
+          <p><strong>Fever</strong> は <strong>Tabを押しながら範囲を指定</strong>して配置します。SNAPに沿って始点・終点を決め、ゲーム側の発光演出を確認してください。</p>
+        </div></details>
+        <details><summary><span class="number">08</span>BPM・BS・NS・拍子の変更</summary><div class="manual-content">
+          <p>演出レーンの空白をクリックしてイベントを追加します。既存イベントの選択・編集は右側の一覧からも行えます。複数選択、コピー貼り付け、削除に対応します。</p>
+          <ul><li><strong>BPM：</strong>曲の拍の速さを変更します。音源との同期に関わります。</li><li><strong>BS：</strong>レーン全体のスクロール倍率です。0で停止、負数で逆方向になります。</li><li><strong>NS：</strong>ノーツの見た目の速度倍率です。ノーツ間隔の圧縮・拡大にも反映されます。1～3の変化モードと、変化にかける拍数を指定できます。</li><li><strong>SIG：</strong>拍子を変更します。</li></ul>
+          <p><strong>SS</strong>は選んだノーツだけ、<strong>NS</strong>は以降のノーツの見た目、<strong>BS</strong>はレーン全体の流れを制御する設定です。</p>
+        </div></details>
+        <details><summary><span class="number">09</span>カメラ演出</summary><div class="manual-content">
+          <p><strong>CAMERA</strong> は位置 X/Y/Z、<strong>CAMERA_ADV</strong> は位置に加えて角度 X/Y/Z を指定できます。変化モード1～3と、移動にかける拍数を設定します。0拍なら即時切り替えです。</p>
+          <p>中央のイベントレーンまたは右側のイベント一覧から選択・編集し、右側プレビューとテストプレイの両方で見え方を確認してください。</p>
+        </div></details>
+        <details><summary><span class="number">10</span>レーン・UIの表示切り替え</summary><div class="manual-content">
+          <p>文字入力中でないときに<strong>← / →</strong>を押すと演出レーンのページが切り替わり、通常の BS / CAMERA / BPM / SIG と、<strong>LANE / UI / NS</strong> の設定レーンを表示できます。ノーツを置くレーンは消えません。</p>
+          <p><strong>LANE</strong> はレーンの背景・線・小節線を非表示にしますが、<strong>ノーツは表示したまま</strong>です。<strong>UI</strong> はスコアやジャケットなどの画面表示を切り替えます。いずれも切り替わるまでの拍数を設定できます。</p>
+        </div></details>
+        <details><summary><span class="number">11</span>音源再生とエディタ内プレビュー</summary><div class="manual-content">
+          <p><strong>Space</strong> で再生・停止します。再生速度は 0.5 / 0.75 / 1.0 / 1.25 / 1.5 倍から選べ、BGMとノーツSEの音量も調整できます。</p>
+          <p>右側のプレビューではノーツや演出の流れを確認でき、プレビュー用ノーツ速度は 0.5～10 倍です。実際の判定・描画を確かめるときは <strong>F1 のテストプレイ</strong>を使ってください。</p>
+        </div></details>
+        <details><summary><span class="number">12</span>テストプレイ</summary><div class="manual-content">
+          <p><strong>F1</strong> で現在の譜面をゲーム本体の描画・判定でテストします。判定線の位置を基準に、開始前にノーツのない<strong>8拍の助走</strong>が入ります。</p>
+          <p>テスト中は <strong>Esc</strong> で終了、<strong>R</strong> でリトライ、<strong>F2</strong> でノーツ速度、<strong>F3</strong> でAUTO、<strong>F11</strong> で全画面表示を切り替えられます。キー配置はレーン数に応じて変わり、ゲーム側で設定した配列も使えます。</p>
+        </div></details>
+        <details><summary><span class="number">13</span>保存・読み込み・自動復旧</summary><div class="manual-content">
+          <p>保存ボタンで <code>.2d</code> を保存します。初回は保存先を選び、既存譜面なら上書きできます。音源・画像・動画も曲フォルダにそろえ、ファイル名が譜面内の指定と一致するか確認してください。</p>
+          <p>クラッシュ時には自動保存データの復旧を提案することがあります。ただし確実なバックアップではないので、編集前後に <code>.2d</code> と素材を別の場所へコピーしてください。<strong>Ctrl＋Z</strong> のUndoは最大80操作です。</p>
+        </div></details>
+        <details><summary><span class="number">14</span>譜面動画をMP4で書き出す</summary><div class="manual-content">
+          <p><code>.2d</code> を開き、難易度を選んで<strong>「動画を書き出す (MP4)」</strong>を押します。<strong>全体</strong>または<strong>開始拍～終了拍の区間</strong>を選び、保存先を指定します。画面録画ではなく、アプリがフレームを生成する方式です。</p>
+          <p>標準は <strong>1920×1080 / 60fps / MP4（H.264＋AAC）</strong>。楽曲音声とオートプレイのノーツSEを収録し、FPS表示は動画に入りません。区間指定時は前後8拍に暗転・フェードイン／フェードアウトを付けます。</p>
+          <p class="note">書き出しには同梱の <code>ffmpeg.exe</code>、有効な音源、十分な空き容量が必要です。エディタ右側のプレビュー用速度ではなく、ゲーム側の設定が動画に使われます。</p>
+        </div></details>
+        <details><summary><span class="number">15</span>ノーツスキンと素材</summary><div class="manual-content">
+          <p>EXE横の <code>skin/atlas.png</code> と <code>skin/skin.json</code> でゲーム、テストプレイ、動画書き出しのノーツ外観を変更できます。ファイルを差し替えたらアプリを再起動してください。エディタ中央の簡易譜面表示はスキンと異なる場合があります。</p>
+          <p>音源・動画・ジャケット・スキンを配布物に含める前に、それぞれの権利者の利用条件を確認してください。</p>
+        </div></details>
+        <details><summary><span class="number">16</span>ショートカット・困ったとき</summary><div class="manual-content">
+          <p><strong>Space</strong> 再生／停止　<strong>Ctrl＋Z</strong> Undo　<strong>Shift＋ドラッグ</strong> 範囲選択　<strong>Ctrl＋C / V</strong> コピー／貼り付け　<strong>Ctrl＋ホイール</strong> 譜面の表示倍率　<strong>← / →</strong> 演出レーン切り替え　<strong>Tab＋範囲指定</strong> Fever　<strong>F1</strong> テストプレイ　<strong>F5</strong> 選択イベント編集　<strong>F11</strong> 全画面。</p>
+          <ul><li><strong>音が出ない：</strong><code>SONG</code> と実際の音源名・保存場所、音量を確認。</li><li><strong>画像や動画が出ない：</strong><code>JACKET</code> / <code>BACKGROUND</code> / <code>MOVIE</code> の名前と曲フォルダを確認。</li><li><strong>テストや動画に反映されない：</strong>対象難易度、譜面の保存場所、素材の参照先を確認。</li><li><strong>エディタ画面が開かない：</strong>ZIPを展開し、<code>editor.html</code> と WebView2 Runtime を確認。</li></ul>
+        </div></details>
+      </section>
     </main>
     <footer><span>© 864 beat</span><a href="https://github.com/ampere112coulomb/864beat">GitHub ↗</a></footer>
   </div>
