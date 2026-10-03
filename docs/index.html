@@ -55,7 +55,7 @@
           <details class="manual-topic"><summary>速度・音量・表示・垂直同期</summary><div class="manual-content"><p>設定でノーツ速度、BGM・SE・選曲プレビューの音量、音声オフセット、キー配置、AUTO、FPS上限、垂直同期などを調整できます。背景の明るさや動画設定も変更できます。</p><p><strong>垂直同期</strong>はゲーム画面と選曲画面に適用されます。動作の滑らかさや入力感を確認しながら、FPS上限と合わせて調整してください。</p><p>テストプレイ中は <strong>F2</strong> でノーツ速度、<strong>F3</strong> でAUTO、<strong>F11</strong> で全画面表示を切り替えます。</p></div></details>
           <details class="manual-topic"><summary>キービーム・レーンカバー</summary><div class="manual-content"><p><strong>キービーム</strong>はキー入力時にレーンが光る演出です。透明度は <strong>0～100</strong> で、100にすると透明になります。長さは <strong>0～100</strong>、50が従来の長さ、0で表示されなくなります。</p><p><strong>レーンカバー</strong>はレーンの上からかぶせる半透明の紫色の板です。0ではカバーなし、50ではノーツ表示箇所から判定線までの中間、100では判定線まで覆います。覆われた範囲ではノーツを隠し、レーンは透けて見えます。</p><p>レーンカバーはプレイヤーのゲーム設定です。<strong>エディタからの譜面動画書き出しには表示せず、自分のプレイを動画化するときは表示</strong>します。</p></div></details>
           <details class="manual-topic"><summary>リザルトとスコアランク</summary><div class="manual-content"><p>曲終了後は背景をぼかしたリザルトへ移り、ジャケット、曲名、作曲者、譜面デザイナー、難易度・レベル、スコア、判定数、最大コンボ、プレイヤーレートを表示します。</p><div class="table-scroll"><table class="manual-table"><caption>各ランクの到達スコア</caption><thead><tr><th scope="col">ランク</th><th scope="col">スコア</th></tr></thead><tbody><tr><td>なし</td><td>779,999 以下</td></tr><tr><td>C</td><td>780,000 以上</td></tr><tr><td>B</td><td>820,000 以上</td></tr><tr><td>A</td><td>860,000 以上</td></tr><tr><td>S</td><td>900,000 以上</td></tr><tr><td>SS</td><td>950,000 以上</td></tr><tr><td>Ex</td><td>990,000 以上</td></tr><tr><td>Ex+</td><td>995,000 以上</td></tr><tr><td>Ψ</td><td>1,000,000</td></tr></tbody></table></div><p>中央のグラフは入力タイミングの分布です。1本が20msの範囲を表し、lateは遅い入力、fastは早い入力です。赤い壁の境界は±20msを示します。</p><p><strong>曲選択・リトライ・見返す・プレイを動画化</strong>をボタンから選べます。</p></div></details>
-          <details class="manual-topic"><summary>スコア保存とプレイヤーレート</summary><div class="manual-content"><p>対象のプレイ結果から譜面ごとのベストスコアを保存し、レートを計算します。譜面別レートは <strong>レベル ×（スコア ÷ 1,000,000）³</strong>。その上位10譜面の合計を10で割った値がプレイヤーレートです。10譜面未満でも10で割ります。</p><p>最高レベル30の譜面10個で理論値を達成した場合、レートの最大値は<strong>30</strong>です。譜面内容やレベルが変更された場合、以前の記録がレート対象から外れることがあります。</p></div></details>
+          <details class="manual-topic"><summary>スコア保存とプレイヤーレート</summary><div class="manual-content"><p>通常プレイの結果から譜面ごとのベストスコアを保存し、レートを計算します。AUTOとリプレイはレート更新の対象外です。譜面別レートは <strong>レベル ×（スコア ÷ 1,000,000）³</strong>。その上位10譜面の合計を10で割った値がプレイヤーレートです。10譜面未満でも10で割ります。</p><p>最高レベル30の譜面10個で理論値を達成した場合、レートの最大値は<strong>30</strong>です。譜面内容やレベルが変更された場合、以前の記録がレート対象から外れることがあります。</p></div></details>
           <details class="manual-topic"><summary>リプレイ・プレイ動画・スキン</summary><div class="manual-content"><p>リザルトの<strong>「見返す」</strong>でプレイを確認し、<strong>「プレイを動画化」</strong>で動画にできます。譜面をAUTOで書き出すエディタの機能とは別です。動画化には同梱の <code>ffmpeg.exe</code> と十分な空き容量が必要です。</p><p>ノーツの外観はEXE横の <code>skin/atlas.png</code> と <code>skin/skin.json</code> で変更できます。ランク画像も <code>skin</code> に置きます。素材を変更したらソフトを再起動してください。</p></div></details>
         </div></details>
         <details class="manual-group" id="manual-editor"><summary><span class="number">03</span><span>エディタの使い方<small>基本情報、配置、レイヤー、演出、書き出し</small></span></summary><div class="manual-group-content">
@@ -82,6 +82,12 @@
     <footer><span>© 864 beat</span><a href="https://github.com/ampere112coulomb/864beat">GitHub ↗</a></footer>
   </div>
   <script>
+    document.querySelectorAll('.manual-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        const group = document.querySelector(link.getAttribute('href'));
+        if (group instanceof HTMLDetailsElement) group.open = true;
+      });
+    });
     (async () => {
       const labels = document.querySelectorAll('[data-asset]');
       try {
