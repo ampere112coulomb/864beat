@@ -30,7 +30,7 @@
       const anchor = (i * .7548776662) % 1;
       const x = width * (.025 + .95 * anchor) + Math.sin(wave) * width * (.009 + i % 4 * .003);
       const y = height * (1.04 - age * 1.12);
-      const radius = Math.max(.6, height / 1080) * (1.3 + i % 5 * .4);
+      const radius = Math.max(.6, height / 1080) * (1.3 + i % 5 * .4) * 1.5;
       const fade = Math.max(0, Math.min(1, age / .12, (1 - age) / .18));
       context.globalAlpha = (95 / 255) * fade * (.8 + .2 * Math.sin(wave * .7));
       context.drawImage(sprites[i % 3 === 0 ? 0 : 1], x - radius * 3, y - radius * 3, radius * 6, radius * 6);
