@@ -21,9 +21,15 @@
     .manual-nav{display:flex;flex-wrap:wrap;gap:12px 28px;margin:0 0 25px;color:var(--blue);font-size:.9rem}.manual-nav a{text-underline-offset:5px}.manual .manual-group{scroll-margin-top:20px}.manual .manual-group>summary{padding:28px 0;font-size:clamp(1.2rem,2vw,1.55rem)}.manual-group>summary small{display:block;font-size:.83rem;font-weight:400;color:var(--sub);margin-top:4px}.manual-group-content{padding:0 0 24px 50px}.manual .manual-topic:first-of-type{border-top:1px solid var(--line)}.manual .manual-topic>summary{padding:17px 0;font-size:1rem}.manual .manual-topic[open]>summary::after{content:"－"}.manual .manual-group[open]>summary::after{content:"－"}.manual .manual-group:not([open])>summary::after,.manual .manual-topic:not([open])>summary::after{content:"＋"}.manual-topic .manual-content{padding:0 28px 22px 0}.manual-content a{color:var(--blue);text-underline-offset:3px}.table-scroll{overflow-x:auto}.manual-table{border-collapse:collapse;width:100%;max-width:450px;margin:12px 0 20px;text-align:left;font-variant-numeric:tabular-nums}.manual-table caption{text-align:left;margin-bottom:8px;color:var(--text)}.manual-table th,.manual-table td{padding:7px 16px 7px 0;border-bottom:1px solid var(--line)}.manual-table th{color:var(--text)}@media(max-width:600px){.manual-group-content{padding-left:0}.manual-topic .manual-content{padding-right:0}.manual .manual-group>summary{padding:23px 0}.manual-nav{gap:10px 20px}}
     .identity img.wordmark{width:180px;height:auto;object-fit:contain}.intro h1{font-size:inherit;line-height:1;letter-spacing:normal}.hero-wordmark{display:block;width:100%;max-width:680px;height:auto;object-fit:contain}
     @media(max-width:600px){.identity img.wordmark{width:125px;height:auto}header{flex-wrap:wrap;padding:16px 0;gap:12px}.intro h1{font-size:inherit}}
+    .game-backdrop{position:fixed;inset:0;z-index:0;pointer-events:none;background:#080c17 url('./864beat-background.png') center/cover no-repeat}
+    .game-backdrop::after{content:"";position:absolute;inset:0;background:#000;opacity:.75;animation:background-breath 5s ease-in-out infinite;will-change:opacity}
+    .page{position:relative;z-index:1}
+    @keyframes background-breath{0%{opacity:.75}20%{opacity:.60}40%,100%{opacity:.75}}
+    @media(prefers-reduced-motion:reduce){.game-backdrop::after{animation:none;opacity:.75}}
   </style>
 </head>
 <body>
+  <div class="game-backdrop" aria-hidden="true"></div>
   <div class="page">
     <header><a class="identity" href="#top"><img class="wordmark" src="./864beat-logo.png" alt="864 beat" width="2172" height="724"></a><nav aria-label="ページ内ナビゲーション"><a href="#download">DOWNLOAD</a><a href="#requirements">環境</a><a href="#songs">SONG SETUP</a><a href="#manual">使い方</a></nav></header>
     <main id="top">
