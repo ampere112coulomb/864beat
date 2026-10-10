@@ -4,7 +4,6 @@
   if (!canvas) return;
   const context = canvas.getContext('2d');
   if (!context) return;
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const started = performance.now();
   let width = 1, height = 1, frame = 0, previous = -Infinity;
   // Pre-render two soft sprites rather than rebuilding gradients each frame.
@@ -22,7 +21,7 @@
   });
   function draw(now) {
     context.clearRect(0, 0, width, height);
-    const time = reducedMotion.matches ? 0 : (now - started) / 1000;
+    const time = (now - started) / 1000;
     for (let i = 0; i < 48; i++) {
       const duration = 16 + (i * 17 % 15);
       const age = (time / duration + i * .61803398875) % 1;
@@ -39,7 +38,7 @@
   }
   function tick(now) {
     frame = 0;
-    if (document.hidden || reducedMotion.matches) return;
+    if (document.hidden) return;
     if (now - previous >= 1000 / 30) { draw(now); previous = now; }
     frame = requestAnimationFrame(tick);
   }
@@ -47,7 +46,7 @@
     cancelAnimationFrame(frame); frame = 0;
     if (document.hidden) return;
     draw(performance.now()); previous = -Infinity;
-    if (!reducedMotion.matches) frame = requestAnimationFrame(tick);
+    frame = requestAnimationFrame(tick);
   }
   function resize() {
     width = innerWidth; height = innerHeight;
@@ -58,6 +57,5 @@
   }
   addEventListener('resize', resize, { passive: true });
   document.addEventListener('visibilitychange', update);
-  reducedMotion.addEventListener('change', update);
   resize();
 })();

@@ -26,7 +26,6 @@
     .page{position:relative;z-index:1}
     .game-particles{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
     @keyframes background-breath{0%{opacity:.75}20%{opacity:.60}40%,100%{opacity:.75}}
-    @media(prefers-reduced-motion:reduce){.game-backdrop::after{animation:none;opacity:.75}}
   </style>
 </head>
 <body>
@@ -167,6 +166,6 @@
       }
     })();
   </script>
-  <script src="./background-particles.js" defer></script>
+  <script src="./background-particles.js?v=20261010-motion" defer></script>
 </body>
 </html>
