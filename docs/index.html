@@ -24,12 +24,14 @@
     .game-backdrop{position:fixed;inset:0;z-index:0;pointer-events:none;background:#080c17 url('./864beat-background.png') center/cover no-repeat}
     .game-backdrop::after{content:"";position:absolute;inset:0;background:#000;opacity:.75;animation:background-breath 5s ease-in-out infinite;will-change:opacity}
     .page{position:relative;z-index:1}
+    .game-particles{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
     @keyframes background-breath{0%{opacity:.75}20%{opacity:.60}40%,100%{opacity:.75}}
     @media(prefers-reduced-motion:reduce){.game-backdrop::after{animation:none;opacity:.75}}
   </style>
 </head>
 <body>
   <div class="game-backdrop" aria-hidden="true"></div>
+  <canvas class="game-particles" aria-hidden="true"></canvas>
   <div class="page">
     <header><a class="identity" href="#top"><img class="wordmark" src="./864beat-logo.png" alt="864 beat" width="2172" height="724"></a><nav aria-label="ページ内ナビゲーション"><a href="#download">DOWNLOAD</a><a href="#requirements">環境</a><a href="#songs">SONG SETUP</a><a href="#manual">使い方</a></nav></header>
     <main id="top">
@@ -164,5 +166,6 @@
       }
     })();
   </script>
+  <script src="./background-particles.js" defer></script>
 </body>
 </html>
